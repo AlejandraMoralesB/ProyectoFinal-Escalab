@@ -21,3 +21,11 @@ function main(){
 	});
 
 };
+
+function registrate() {
+	location.href = "registrate.html";
+}
+
+function conoceme() {
+	location.href = "conoceme.html";
+}
