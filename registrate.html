@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alejandra Morales">
+    <meta name="description" content="Proyecto Final Desarrollo Web- Escalab">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <title> Proyecto Final</title>
+
+    <link rel="stylesheet" href="Css/Style.css">
+    <link rel="stylesheet" href="Css/registrate.css">
+
+    <!--    Font -->   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<body>
+     <header >
+        <nav class="nav">
+            <input type="checkbox" name="" id="nav__checkbox" class="nav__checkbox" />
+            <label for="nav__checkbox" class="nav__toggle">
+                <!-- Menu -->
+                <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
+                    <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+                </svg>
+        
+                <!-- Close -->
+                <svg class="close" viewBox="0 0 384 512" width="100" title="times">
+                    <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+                </svg>
+            </label>
+        
+            <ul class="nav__menu">
+                <li class="menu__logo">
+                    <img src="./Assets/EcotursLOGO.PNG" alt="Ecomturs logo" title="Ecomturs Logo" />
+                </li>
+                <li><a href="home.html">Home</a></li>               
+                <li><a href="conoceme.html">Servicios</a></li>
+                <li><a href="registrate.html">Registrate</a></li>
+            </ul>
+        </nav>
+    </header>
+<section>
+</section>
+<div class="container_register">
+  <div class="header">
+    <h2>Registrate</h2>
+  </div>
+  <form action="" class="form" id="form">
+    <div class="form-control">
+      <label>Usuario</label>
+      <input type="text" placeholder="Escriba su Nombre" id="username">
+      <i class="fas fa-check-circle"></i>
+      <i class="fas fa-exclamation-circle"></i>
+      <small>Error message</small>
+    </div>
+    <div class="form-control">
+      <label>Correo Electronico</label>
+      <input type="email" placeholder="Escriba su Correo Electronico" id="email">
+      <i class="fas fa-check-circle"></i>
+      <i class="fas fa-exclamation-circle"></i>
+      <small>Error message</small>
+    </div>
+    <div class="form-control">
+      <label>Contraseña<p class="password_items">( 8 caracteres , 1 Mayuscula, 1 minuscula )</p></label>
+      <input type="password" placeholder="Escriba una contraseña" id="password">
+      <i class="fas fa-check-circle"></i>
+      <i class="fas fa-exclamation-circle"></i>
+      <i class="far fa-eye" id="show" onclick="togglePassword()"></i>
+      <i class="far fa-eye-slash" id="hide" onclick="togglePassword()"></i>
+      <small>Error message</small>
+    </div>
+    <div class="form-control">
+      <label>Confirma Contraseña </label>
+      <input type="password" placeholder="Vuelva a escribir su contraseña" id="password2">
+      <i class="fas fa-check-circle"></i>
+      <i class="fas fa-exclamation-circle"></i>
+      <i class="far fa-eye" id="show2" onclick="toggleConfirm()"></i>
+      <i class="far fa-eye-slash" id="hide2" onclick="toggleConfirm()"></i>
+      <small>Error message</small>
+    </div>
+    
+    <button class="button_register">Registrame</button>
+  </form>
+</div>
+</section>
+    <footer  class="all__footer" >
+    <div class="legal">
+    <p>&copy; 2022 . Todos los derechos reservados.</p>
+    
+    <div class="legal__links">
+      <p>Hecho con amor por <p class="heart" > ♥ </p> <a class="linkdln" href="https://www.linkedin.com/in/alejandra-morales-barra/" class="button">Alejandra Morales</a></p>
+    </div>
+</footer>
+ <!-- JS -->
+ <script src="js/registrate.js"></script>
+</body>
+</html>

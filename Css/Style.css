@@ -1,0 +1,236 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-weight: 400;
+	font-family: 'Roboto Condensed', sans-serif;
+	line-height:30px;
+}
+
+.nav {
+	border-bottom: 1px solid #00550b;
+	background-color: #256B4E; 
+	
+}
+
+.nav__toggle {
+	position: absolute;
+	cursor: pointer;
+	margin: 1rem 1rem;
+	right: 0;
+}
+
+.nav__toggle svg {
+	width: 1rem;
+	fill: var(--white);
+}
+
+.nav__toggle .close {
+	display: none;
+}
+
+.nav__toggle .close,
+.nav__toggle .menu {
+	margin-top: 0.3rem;
+}
+
+.nav__checkbox {
+	display: none;
+}
+
+.nav__menu {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	align-items: center;
+	padding: 1rem;
+	
+}
+
+.nav__menu li {
+	list-style-type: none;
+	display: none;
+}
+
+.nav__menu li:first-child {
+	margin-right: auto;
+	display: block;
+}
+
+.nav__menu a {
+	text-decoration: none;
+	color: #fff;;
+	font-size: 1.1rem;
+}
+
+.menu__logo {
+	height: 50px;
+}
+
+.menu__logo img {
+	height: 100%;
+}
+
+#nav__checkbox:checked ~ ul.nav__menu li {
+	display: block;
+}
+
+#nav__checkbox:checked ~ label.nav__toggle .close {
+	display: block;
+}
+
+#nav__checkbox:checked ~ label.nav__toggle .menu {
+	display: none;
+}
+
+
+
+.title_home{
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 80px;
+}
+
+.cont__img {   
+     position: absolute;
+     width: 100%;
+	 height: 83%;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+  }
+
+  .all__footer{
+	background-color: rgb(46, 46, 46);
+	bottom: 0;
+	width: 100%;
+	color: white;
+	left: 0;
+    width: 100%;
+    position: fixed;
+	height: 90px;
+  }
+
+  .legal {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top:2rem;
+	margin-bottom:2rem;
+	padding-left: 1rem;
+	padding-right: 2rem;
+	color: white;
+  }
+	
+  .legal__links {
+	display: flex;
+	align-items: center;
+  }
+  
+  .text_legal{
+	margin:6px;  
+  }
+  .heart {
+	color: salmon;
+	font-size: 26px;
+	margin:6px;
+  }
+
+  .linkdln{
+	color: antiquewhite; 
+	text-decoration: none;
+
+  }
+
+  @media screen and (min-width: 24.375em) {
+	.legal .legal__links {
+	  margin-left: auto;
+	}
+  }
+
+  .content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+
+.content p{
+    margin-top: 10px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button{
+    width: 250px;
+    padding: 22px 0;
+    text-align: center;
+    margin: 12px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+	border: 3px solid #256B4E;
+    background: #37906be2;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+	background: #37906be2;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    transition: 0.5s;
+    font-size: 18px;
+	font-family: 'Roboto Condensed', sans-serif;	
+}
+
+button:hover span{
+    width: 100%;
+	background-color: #256B4E;
+}
+
+button:hover{
+    background-color: #256B4E;
+}
+
+.banner{
+    width: 100%;
+    height: 84vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.244),rgba(0, 0, 0, 0.211)), url(https://www.lifeofpix.com/wp-content/uploads/2015/06/Life-of-Pix-free-stock-photos-van-sea-landscape-santalla.jpg);
+    background-size: cover;
+    background-position:center ;
+}
+
+@media only screen and (min-width: 560px) {
+	.nav__toggle {
+		display: none;
+	}
+
+	.nav__menu {
+		flex-direction: row;
+	}
+
+	.nav__menu li {
+		display: block;
+	}
+	.cont__img { 
+		width: 100%;
+		height: 95%;
+	}
+    .title_home {
+		font-size: 100px;		
+	}
+	.content p{
+		margin: 54px;
+		font-weight: 500;
+		line-height: 35px;
+		font-size: 40px;
+	}
+}
