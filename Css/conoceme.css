@@ -1,0 +1,173 @@
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px 35px;
+}
+
+section:not(.hero):nth-child(even) {
+	background-color: #f5f5f5;
+}
+
+.grid {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+hr {
+	width: 250px;
+	height: 3px;
+	background-color: #256B4E;
+	border: 0;
+	margin-bottom: 50px;
+	margin-top: 34px;
+}
+
+.image-1 {
+	background-image: url("https://images.unsplash.com/photo-1505852903341-fc8d3db10436?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1600&h=900&fit=crop&s=e2f72e62d5f4f04256dd9305d5f51f3c");
+}
+
+.image-2 {
+	background-image: url("https://images.unsplash.com/photo-1475483768296-6163e08872a1?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1600&h=900&fit=crop&s=20b3b1c3caef8c619ac3c75c07a7eafb");
+}
+
+.image-3 {
+	background-image: url("https://images.unsplash.com/photo-1490576198307-6ff97609a0cc?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1600&h=900&fit=crop&s=a0dbd168637edc2cfdac3715ab23d519");
+}
+
+.image-4 {
+	background-image: url("https://images.unsplash.com/photo-1505483531331-fc3cf89fd382?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1600&h=900&fit=crop&s=4f305bbc0243f81f1bf6053a62d76297");
+}
+
+section h3.title {
+	text-transform: capitalize;
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 48px;
+	margin-bottom: 5rem;
+	margin-top: 2rem;
+	text-align: center;
+}
+
+.sub_title {
+	text-transform: capitalize;
+	margin-bottom: 30px;
+	text-align: center;
+	font-size: 48px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.text{
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*Destinations Section*/
+
+.destinations .grid li {
+	height: 350px;
+	padding: 20px;
+	background-clip: content-box;
+	background-size: cover;
+	background-position: center;
+}
+
+.destinations .grid li.small {
+	flex-basis: 30%;
+}
+
+.destinations .grid li.large {
+	flex-basis: 70%;
+}
+
+@media (max-width: 1100px) {
+	.destinations .grid li.small,
+	.destinations .grid li.large {
+		flex-basis: 50%;
+	}
+}
+
+@media (max-width: 800px) {
+	.destinations .grid li.small,
+	.destinations .grid li.large {
+		flex-basis: 100%;
+	}
+}
+
+/*Packages Section*/
+::marker {
+    color: white;
+}
+
+.packages .grid li {
+	padding: 50px;
+	flex-basis: 50%;
+	text-align: center;
+}
+
+.packages .grid li i {
+	color: #256B4E;
+}
+
+.packages .grid li h4 {
+	font-size: 30px;
+	margin: 25px 0;
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+@media (max-width: 800px) {
+	.packages .grid li {
+		flex-basis: 100%;
+		padding: 20px;
+	}
+}
+
+/*Testimonials Section*/
+
+.testimonials .quote {
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 1.5;
+	margin: 40px 0 25px;
+}
+
+@media (max-width: 800px) {
+	.testimonials .quote {
+		font-size: 18px;
+		margin: 15px 0;
+	}
+
+	.testimonials .author {
+		font-size: 14px;
+	}
+}
+
+/*Contact Section*/
+
+.contact form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 60%;
+}
+
+.contact form .btn {
+	padding: 18px 42px;
+}
+
+.contact form input {
+	padding: 15px;
+	margin-right: 30px;
+	font-size: 18px;
+	color: #555;
+	flex: 1;
+}
+
+@media (max-width: 1000px) {
+	.contact form input {
+		flex-basis: 100%;
+		margin: 0 0 20px 0;
+	}
+}
+
