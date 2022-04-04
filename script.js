@@ -26,8 +26,6 @@ function registrate() {
 	location.href = "registrate.html";
 }
 
-
 function servicios() {
 	location.href = "servicios.html";
-
 }

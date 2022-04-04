@@ -92,36 +92,3 @@ const isEmail = (email) => {
   //this checks if the email is valid
 	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
-
-const togglePassword = () => {
-  const psw = document.getElementById('password');
-  const show = document.getElementById('show');
-  const hide = document.getElementById('hide');
-
-  if (psw.type === "password") {
-      psw.type = "text";
-      show.style.visibility = 'hidden';
-      hide.style.visibility = 'visible';
-    } else {
-      psw.type = "password";
-      show.style.visibility = 'visible';
-      hide.style.visibility = 'hidden';
-    }
-}
-
-const toggleConfirm = () => {
-  const confirm = document.getElementById('password2'); 
-  const show2 = document.getElementById('show2');
-  const hide2 = document.getElementById('hide2');
-  
-  if (confirm.type === "password") {
-      confirm.type = "text";
-      show2.style.visibility = 'hidden';
-      hide2.style.visibility = 'visible';
-    } else {
-      confirm.type = "password";
-      show2.style.visibility = 'visible';
-      hide2.style.visibility = 'hidden';
-    }
-}
-
