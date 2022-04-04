@@ -10,12 +10,18 @@
     <title> Proyecto Final</title>
 
     <link rel="stylesheet" href="Css/Style.css">
-  <!-- JS -->
-  <script src="script.js"></script>
 
+    <link rel="stylesheet" href="Css/registrate.css">
+
+    <!--    Font -->   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Roboto+Condensed&display=swap" rel="stylesheet">
+
 </head>
 <body>
      <header >
@@ -37,24 +43,63 @@
                 <li class="menu__logo">
                     <img src="./Assets/EcotursLOGO.PNG" alt="Ecomturs logo" title="Ecomturs Logo" />
                 </li>
-                <li><a href="#">Home</a></li>               
-                <li><a href="#">Registrate</a></li>
-                <li><a href="#">Contactanos</a></li>
+                <li><a href="home.html">Home</a></li>               
+                <li><a href="conoceme.html">Servicios</a></li>
+                <li><a href="registrate.html">Registrate</a></li>
             </ul>
         </nav>
     </header>
-<section>
-  <h2>REGISTRAME</h2>
+<div class="container_register">
+  <div class="header">
+    <h2>Registrate</h2>
+  </div>
+  <form action="" class="form" id="form">
+    <div class="form-control">
+      <label>Usuario</label>
+      <input type="text" placeholder="Escriba su Nombre" id="username">
+      <i class="fas fa-check-circle"></i>
+      <i class="fas fa-exclamation-circle"></i>
+      <small>Error message</small>
+    </div>
+    <div class="form-control">
+      <label>Correo Electronico</label>
+      <input type="email" placeholder="Escriba su Correo Electronico" id="email">
+      <i class="fas fa-check-circle"></i>
+      <i class="fas fa-exclamation-circle"></i>
+      <small>Error message</small>
+    </div>
+    <div class="form-control">
+      <label>Contraseña<p class="password_items">( 8 caracteres , 1 Mayuscula, 1 minuscula )</p></label>
+      <input type="password" placeholder="Escriba una contraseña" id="password">
+      <i class="fas fa-check-circle"></i>
+      <i class="fas fa-exclamation-circle"></i>
+      <i class="far fa-eye" id="show" onclick="togglePassword()"></i>
+      <i class="far fa-eye-slash" id="hide" onclick="togglePassword()"></i>
+      <small>Error message</small>
+    </div>
+    <div class="form-control">
+      <label>Confirma Contraseña </label>
+      <input type="password" placeholder="Vuelva a escribir su contraseña" id="password2">
+      <i class="fas fa-check-circle"></i>
+      <i class="fas fa-exclamation-circle"></i>
+      <i class="far fa-eye" id="show2" onclick="toggleConfirm()"></i>
+      <i class="far fa-eye-slash" id="hide2" onclick="toggleConfirm()"></i>
+      <small>Error message</small>
+    </div>
+    
+    <button class="button_register">Registrame</button>
+  </form>
+</div>
 </section>
-
     <footer  class="all__footer" >
     <div class="legal">
-    <p>&copy; 2022 Something. All rights reserved.</p>
+    <p>&copy; 2022 . Todos los derechos reservados.</p>
     
     <div class="legal__links">
-      <p>Made with <p class="heart">♥</p> Alejandra Morales</p>
+      <p>Hecho con amor por <p class="heart" > ♥ </p> <a class="linkdln" href="https://www.linkedin.com/in/alejandra-morales-barra/" class="button">Alejandra Morales</a></p>
     </div>
 </footer>
-
+ <!-- JS -->
+ <script src="js/registrate.js"></script>
 </body>
 </html>

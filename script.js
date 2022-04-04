@@ -26,6 +26,8 @@ function registrate() {
 	location.href = "registrate.html";
 }
 
-function conoceme() {
-	location.href = "conoceme.html";
+
+function servicios() {
+	location.href = "servicios.html";
+
 }
