@@ -1,3 +1,9 @@
+body {
+  font-weight: 400;
+  font-family: 'Roboto Condensed', sans-serif;
+  line-height: 27px;
+}
+
 .container__register{
   background: #fff;
   border-radius: 2px;
@@ -10,7 +16,7 @@
 .header{
   background: #f7f7f7;
   border-bottom: 1px solid #f0f0f0;
-  padding: 12px 20px;
+  padding: 5px;
 }
 
 .header h2{
@@ -19,11 +25,10 @@
 }
 
 .form{
-  padding: 30px 20px;
+  padding: 2px 20px;
 }
 
 .form-control{
-  margin-bottom: 2px;
   padding-bottom: 5px;
   position: relative;
 }
@@ -38,9 +43,13 @@
   border: 2px solid #f0f0f0;
   border-radius: 2px;
   display: block;
-  font-size: 14px;
-  padding: 10px;
+  font-size: 13px;
+  padding: 7px;
   width: 100%;
+}
+
+label{
+  font-size: 14px;
 }
 
 .form-control.success input{
@@ -54,7 +63,7 @@
 .form-control i{
   visibility: hidden;
   position: absolute;
-  top: 36px;
+  top: 30px;
   right: 10px;
 }
 
@@ -63,28 +72,8 @@
   cursor: pointer;
 }
 
-.form-control i.fa-eye-slash {
-  visibility: hidden;
-  cursor: pointer;
-}
-
-.form-control.success i.fa-check-circle {
-  visibility: visible;
-  color: #2ecc71;
-  top: 36px;
-  right: 30px;
-}
-
-.form-control.error i.fa-exclamation-circle{
-  visibility: visible;
-  color: #e74c3c;
-  top: 36px;
-  right: 30px;
-}
-
 .form-control small{
   visibility: hidden;
-  position: absolute;
   bottom: -4px;
   left: 0;
 }
@@ -97,12 +86,13 @@
 .form .button_register{
   width: 90%;
   padding: 5px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .password_items{
   font-size: 11px;
   display: flex;
+  margin-top: -12px;
 }
 
 @media only screen and (min-width: 768px) {

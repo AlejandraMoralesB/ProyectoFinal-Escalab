@@ -87,11 +87,10 @@ body {
 	display: none;
 }
 
-
-
 .title_home{
 	font-family: 'Gloria Hallelujah', cursive;
-	font-size: 80px;
+	font-size: 58px;
+	margin-top: 5px;
 }
 
 .cont__img {   
@@ -111,15 +110,15 @@ body {
 	left: 0;
     width: 100%;
     position: fixed;
-	height: 90px;
+	height: 69px;
   }
 
   .legal {
 	display: flex;
 	flex-wrap: wrap;
-	margin-top:2rem;
+	margin-top:1rem;
 	margin-bottom:2rem;
-	padding-left: 1rem;
+	padding-left: 2rem;
 	padding-right: 2rem;
 	color: white;
   }
@@ -161,9 +160,11 @@ body {
 
 
 .content p{
-    margin-top: 10px auto;
-    font-weight: 100;
-    line-height: 25px;
+	margin-top: 3rem;
+    font-size: 24px;
+    padding-left: 10px;
+    padding-right: 10px; 
+	margin-bottom: 22px;
 }
 
 button{
@@ -187,7 +188,7 @@ span{
     width: 0;
     border-radius: 25px;
     transition: 0.5s;
-    font-size: 18px;
+    font-size: 22px;
 	font-family: 'Roboto Condensed', sans-serif;	
 }
 
@@ -233,4 +234,14 @@ button:hover{
 		line-height: 35px;
 		font-size: 40px;
 	}
+	.title_home{
+		font-family: 'Gloria Hallelujah', cursive;
+		font-size: 80px;
+	}
+	.content p{
+		margin-top : 10px auto;
+		font-weight: 400;
+		line-height: 25px;
+	}
+	
 }
