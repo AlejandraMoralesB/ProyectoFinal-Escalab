@@ -22,8 +22,8 @@ hr {
 	height: 3px;
 	background-color: #256B4E;
 	border: 0;
-	margin-bottom: 10px;
-	margin-top: 15px;
+	margin-bottom: 20px;
+	margin-top: 8px;
 }
 
 .image-1 {
@@ -53,15 +53,15 @@ section h3.title {
 
 .sub_title {
 	text-transform: capitalize;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 	text-align: center;
-	font-size: 48px;
+	font-size: 36px;
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
 .text{
 	font-family: 'Roboto Condensed', sans-serif;
-	width: 60%;
+	width: 83%;
     text-align: center;
 }
 
@@ -114,14 +114,14 @@ section h3.title {
 
 .packages .grid li h4 {
 	font-size: 30px;
-	margin: 25px 0;
+	margin: 15px 0;
 	font-family: 'Gloria Hallelujah', cursive;
 }
 
 @media (max-width: 800px) {
 	.packages .grid li {
 		flex-basis: 100%;
-		padding: 20px;
+		padding: 15px;
 	}
 }
 

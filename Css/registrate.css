@@ -67,11 +67,6 @@ label{
   right: 10px;
 }
 
-.form-control i.fa-eye {
-  visibility: visible;
-  cursor: pointer;
-}
-
 .form-control small{
   visibility: hidden;
   bottom: -4px;
